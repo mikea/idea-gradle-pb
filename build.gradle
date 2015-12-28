@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'com.google.protobuf'
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.7.1'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.protobuf:protobuf-java:2.6.1'
+}
+
+protobuf {
+    protoc {
+        artifact = 'com.google.protobuf:protoc:2.6.1'
+    }
+}
