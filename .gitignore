@@ -2,3 +2,9 @@
 .idea/
 build/
 *.iml
+/bin/
+gradle/
+.classpath
+.project
+gradlew
+gradlew.bat
