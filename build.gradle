@@ -23,4 +23,18 @@ protobuf {
     protoc {
         artifact = 'com.google.protobuf:protoc:2.6.1'
     }
+
+    generatedFilesBaseDir = "$projectDir/src/gen"
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ["src/main/java", "src/gen/main/java"]
+        }
+    }
+}
+
+clean {
+    delete "src/gen"
 }

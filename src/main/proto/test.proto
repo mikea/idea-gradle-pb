@@ -1,3 +1,7 @@
+package testproto;
+
+option java_package = "testproto";
+
 message TestMessage {
     optional string name = 1;
 }

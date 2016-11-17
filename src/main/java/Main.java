@@ -1,3 +1,5 @@
+import testproto.Test;
+
 /**
  */
 public class Main {
